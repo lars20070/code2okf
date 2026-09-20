@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Agents
+.claude/settings.local.json
+
+# Nothing reads a .env any more -- the driver takes XDG_STATE_HOME from the
+# environment -- but developers upgrading from the shell path still have one,
+# and it must not become committable just because it went unused.
+.env
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+
+# web2md HTML fetch cache
+web2md/cache/
+
+# md input folder
+# md/*
+
+# okf output folder
+okf/*
